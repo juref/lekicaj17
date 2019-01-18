@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Hello, SmartNinja!</h1>
+
+    <p>{{ sporocilo }}</p>
+
+    <p>
+        {% if dodatne_stvari %}
+            <p>{{dodatne_stvari}}</p>
+        {% else %}
+            <p>Od Handlerja nismo prejeli nobenega sporočila :( </p>
+        {% endif %}
+    </p>
+
+    <form method="post">
+        <input type="text" placeholder="vnesi komentar" id="vnos" name="vnos"/>
+        <button type="submit">Objavi</button>
+    </form>
+</body>
+
+</html>

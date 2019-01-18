@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pretvornik enot</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+   <div class="container">
+        <h1>Pretvornik enot</h1>
+        <div class="message">
+            <br />
+            {% if convert == "km_2_mi" %}
+                <div>{{ number }} km = {{ display }} mi</div>
+            {% elif convert == "mi_2_km" %}
+                <div>{{ number }} mi = {{ display }} km</div>
+            {% else %}
+                <div>Niste izbrali pretvorbe!</div>
+            {% endif %}
+            <br />
+        </div>
+        <a href="/">nazaj</a>
+   </div>
+</body>
+</html>

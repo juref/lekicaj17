@@ -1,0 +1,14 @@
+
+body {
+    background-color: #57808d;
+    margin: auto;
+}
+.container {
+    width: 285px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hint {
+    color: #283B41;
+    font-size: 0.8em;
+    }
